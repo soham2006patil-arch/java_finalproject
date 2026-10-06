@@ -205,24 +205,4 @@ java FlightTicketFareCalculator
 
 ---
 
-## 🎓 7. Viva Voce / Project Defense Q&A
 
-**Q1: Why did you use `switch` statements for destinations and class selection instead of nested `if-else`?**  
-> *Answer:* `switch` statements provide clean branching for fixed discrete menu selections, significantly improving code readability and maintainability compared to deeply nested `if-else` statements.
-
-**Q2: How is the excess baggage fee calculated?**  
-> *Answer:* We use a relational condition `if (carriedBaggage > freeBaggage)`. If true, the arithmetic subtraction operator calculates excess weight: `excessBaggage = carriedBaggage - freeBaggage`. This is then multiplied by the respective domestic (₹450/kg) or international (₹850/kg) excess tariff rate.
-
-**Q3: How are invalid inputs handled when reading with `Scanner`?**  
-> *Answer:* Values are read via `sc.nextLine().trim()` and parsed safely using `Integer.parseInt()` and `Double.parseDouble()`.
-
-**Q4: How does the application enforce category integrity (e.g., Senior Citizen)?**  
-> *Answer:* The program checks the registered age against the category rules using `if-else` logic. If a passenger selects "Senior Citizen" but enters an age below 60, the category automatically reverts to General with an informative message.
-
----
-
-## 👨‍💻 Project Metadata
-- **Author:** B.Tech CSE Student (2025-29)
-- **Subject:** Java Programming (Semester III)
-- **Case Study:** Case Study 177 - Flight Ticket Fare Calculator
-- **Affiliation:** School of Future Tech, ITM Skills University
